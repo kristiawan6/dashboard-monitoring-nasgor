@@ -1,7 +1,6 @@
 <div align="center">
-  <img src="./public/user/images/logoguyub.png" />
+  <img style="width: 400px;" src="./public/user/images/logoguyub.png" />
 </div>
-<h3 align="center">Backend Blanja</h3>
 
 # Nasi Goreng Dashboard Monitoring App
 
