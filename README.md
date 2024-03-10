@@ -15,6 +15,6 @@ Welcome to the Nasi Goreng Dashboard Monitoring App! This web application allows
 
 ## Technologies Used
 
--   Frontend: React + Typescript + Tailwind Css
+-   Frontend: React + Typescript + Tailwind CSS
 -   Backend: PHP (Laravel 10)
 -   Database: MySQL
