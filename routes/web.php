@@ -29,11 +29,11 @@ use App\Http\Controllers\TransaksiController;
 // });
 
 // Route::get('/', [UserController::class, 'index'])->name('pengguna');
-Route::redirect('/', '/dashboard');
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login-proses', [LoginController::class, 'login_proses'])->name('login-proses');
 
-Route::middleware('auth')->group(function () {
+// Route::middleware('auth')->group(function () {
+    Route::redirect('/', '/dashboard');
     Route::get('logout', 'AuthController@logout')->name('logout');
     Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
     Route::get('page/{layout}/{pageName}', 'PageController@loadPage')->name('page');
@@ -49,4 +49,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/delete-cart/{OrderId}', [CartController::class, 'destroy'])->name('delete-cart');
 
     Route::post('/checkout/{OrderId}', [TransaksiController::class, 'store'])->name('checkout');
-});
+// });

@@ -1,12 +1,12 @@
 @extends('../layout/side-menu')
 
 @section('subhead')
-    <title>Point of Sale - Midone - Laravel Admin Dashboard Starter Kit</title>
+    <title>Sales Report</title>
 @endsection
 
 @section('subcontent')
     <div class="intro-y flex flex-col sm:flex-row items-center mt-8">
-        <h2 class="text-lg font-medium mr-auto">Monitoring Penjualan</h2>
+        <h2 class="text-lg font-medium mr-auto">Laporan Penjualan</h2>
         <div class="w-full sm:w-auto flex mt-4 sm:mt-0">
             <a href="javascript:;" data-toggle="modal" data-target="#new-order-modal"
                 class="button text-white bg-theme-1 shadow-md mr-2">Make New

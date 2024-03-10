@@ -2,7 +2,7 @@
 
 
 @section('subhead')
-    <title>CRUD Data List - Midone - Laravel Admin Dashboard Starter Kit</title>
+    <title>Stock </title>
 @endsection
 
 @section('subcontent')

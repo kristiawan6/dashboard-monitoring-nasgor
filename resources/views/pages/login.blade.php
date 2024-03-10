@@ -1,7 +1,7 @@
 @extends('../layout/' . $layout)
 
 @section('head')
-    <title>Login - Saintek</title>
+    <title>Login - Nasgor</title>
 @endsection
 
 @section('content')
@@ -10,10 +10,10 @@
             <!-- BEGIN: Login Info -->
             <div class="hidden xl:flex flex-col min-h-screen">
                 <div class="my-auto">
-                    <img alt="Midone Laravel Admin Dashboard Starter Kit" class="-intro-x w-1/2 -mt-16"
-                        src="/user/images/logo.png">
-                    <div class="-intro-x text-white font-medium text-4xl leading-tight mt-10">Sisiliiaa Kitchen</div>
-                    <div class="-intro-x mt-5 text-lg text-white">IPA x RPL</div>
+                    <img alt="Midone Laravel Admin Dashboard Starter Kit" class="-intro-x w-100 -mt-16"
+                        src="/user/images/logoguyub.png">
+                    {{-- <div class="-intro-x text-white font-medium text-3xl leading-tight mt-10">Dashboard Monitoring Guyub Rukun</div> --}}
+                    {{-- <div class="-intro-x mt-5 text-lg text-white">IPA x RPL</div> --}}
                 </div>
             </div>
             <!-- END: Login Info -->

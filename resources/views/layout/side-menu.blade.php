@@ -42,7 +42,7 @@
                                                 <i data-feather="activity"></i>
                                             </div>
                                             <div class="side-menu__title">
-                                                Pesanan
+                                                Sales Report
                                             </div>
                                         </a>
                                     </li>
@@ -53,7 +53,7 @@
                                                 <i data-feather="activity"></i>
                                             </div>
                                             <div class="side-menu__title">
-                                                Stok
+                                                Stock
                                             </div>
                                         </a>
                                     </li>

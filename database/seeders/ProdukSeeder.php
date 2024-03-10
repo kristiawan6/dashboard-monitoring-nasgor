@@ -15,37 +15,73 @@ class ProdukSeeder extends Seeder
     {
         $users = [
             [
-                'nama' => 'Popchick Sambal Ijo',
+                'nama' => 'Nasi Goreng Biasa',
                 'stok' => '2000',
-                'harga' => '17000'
+                'harga' => '14000'
             ],
             [
-                'nama' => 'Popchick Sambal Matah',
+                'nama' => 'Nasi Goreng Hijau',
                 'stok' => '2000',
-                'harga' => '17000'
+                'harga' => '15000'
             ],
             [
-                'nama' => 'Popchick Sambal Bawang',
+                'nama' => 'Nasi Goreng Mauwut',
                 'stok' => '2000',
-                'harga' => '17000'
+                'harga' => '15000'
             ],
             [
-                'nama' => 'Pisang Nugget Cokelat',
+                'nama' => 'Nasi Goreng Kambing',
                 'stok' => '2000',
-                'harga' => '8000'
+                'harga' => '25000'
             ],
             [
-                'nama' => 'Pisang Nugget Matcha',
+                'nama' => 'Nasi Goreng Seafood',
                 'stok' => '2000',
-                'harga' => '8000'
+                'harga' => '25000'
             ],
             [
-                'nama' => 'Pisang Nugget Cokelat Keju',
+                'nama' => 'Nasi Goreng Ayam',
                 'stok' => '2000',
-                'harga' => '8000'
+                'harga' => '20000'
             ],
-
+            [
+                'nama' => 'Nasi Goreng Ati Ampela',
+                'stok' => '2000',
+                'harga' => '20000'
+            ],
+            [
+                'nama' => 'Nasi Goreng Teri Medan',
+                'stok' => '2000',
+                'harga' => '20000'
+            ],
+            [
+                'nama' => 'Nasi Goreng Gila',
+                'stok' => '2000',
+                'harga' => '20000'
+            ],
+            [
+                'nama' => 'Nasi Goreng Telor Dadar',
+                'stok' => '2000',
+                'harga' => '20000'
+            ],
+            [
+                'nama' => 'Nasi Goreng Bakso/sosis',
+                'stok' => '2000',
+                'harga' => '20000'
+            ],
+            [
+                'nama' => 'Nasi Goreng Pete',
+                'stok' => '2000',
+                'harga' => '20000'
+            ],
+            [
+                'nama' => 'Mie/Bihun/Kwetiau Goreng/Rebus',
+                'stok' => '2000',
+                'harga' => '15000'
+            ],
         ];
+
+
         foreach ($users as $key => $value) {
             Produk::create($value);
         }

@@ -132,9 +132,10 @@
                                         <td>
                                             <div class="font-medium whitespace-no-wrap">{{ $item->produk->nama }}</div>
                                         </td>
-                                        <td class="text-center">{{ $item->produk->harga }}</td>
+                                        <td class="text-center">Rp.{{ number_format($item->produk->harga) }}</td>
                                         <td class="text-center">{{ $item->qty }}</td>
-                                        <td class="text-center">Rp.{{ $item->produk->harga * $item->qty }}, -</td>
+                                        <td class="text-center">Rp.{{ number_format($item->produk->harga * $item->qty) }},
+                                            -</td>
                                     </tr>
                                 @endforeach
                                 <tr class="intro-x flex justify-end">
@@ -147,7 +148,7 @@
                                     </td>
                                     <td class="text-center"></td>
                                     <td class="text-center"></td>
-                                    <td class="text-center font-bold">Rp.{{ $data['total'] }}, -</td>
+                                    <td class="text-center font-bold">Rp.{{ number_format($data['total']) }}, -</td>
                                 </tr>
 
                             </tbody>
