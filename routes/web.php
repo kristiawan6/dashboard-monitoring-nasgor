@@ -29,16 +29,13 @@ use App\Http\Controllers\TransaksiController;
 // });
 
 // Route::get('/', [UserController::class, 'index'])->name('pengguna');
-Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::get('/', [LoginController::class, 'index'])->name('login');
 Route::post('/login-proses', [LoginController::class, 'login_proses'])->name('login-proses');
 
-// Route::middleware('auth')->group(function () {
-    Route::redirect('/', '/dashboard');
+Route::middleware('auth')->group(function () {
     Route::get('logout', 'AuthController@logout')->name('logout');
     Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
-    Route::get('page/{layout}/{pageName}', 'PageController@loadPage')->name('page');
     Route::post('/update-stock/{id}', 'PageController@updateStock')->name('edit-stock');
-
     Route::get('/order', [OrderController::class, 'index'])->name('order');
     Route::get('/stok', [ProdukController::class, 'index'])->name('stok');
     Route::post('/update-stock/{id}', 'ProdukController@update')->name('update-stock');
@@ -49,4 +46,4 @@ Route::post('/login-proses', [LoginController::class, 'login_proses'])->name('lo
     Route::delete('/delete-cart/{OrderId}', [CartController::class, 'destroy'])->name('delete-cart');
 
     Route::post('/checkout/{OrderId}', [TransaksiController::class, 'store'])->name('checkout');
-// });
+});
