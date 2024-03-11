@@ -24,17 +24,8 @@ class OrderController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-
         $code = 'ORD - ' . mt_rand(0000, 9999);
 
         Order::create([
@@ -47,6 +38,25 @@ class OrderController extends Controller
 
         return redirect()->route('make-order', $order_id);
     }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    // public function store(Request $request)
+    // {
+
+    //     $code = 'ORD - ' . mt_rand(0000, 9999);
+
+    //     Order::create([
+    //         'nama_customer' => $request->nama_customer,
+    //         'code' => $code,
+    //         'status' => 'UNPAID',
+    //     ]);
+
+    //     $order_id = Order::latest()->first()->id;
+
+    //     return redirect()->route('make-order', $order_id);
+    // }
 
     /**
      * Display the specified resource.

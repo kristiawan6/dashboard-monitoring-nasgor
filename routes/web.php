@@ -40,7 +40,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/stok', [ProdukController::class, 'index'])->name('stok');
     Route::post('/update-stock/{id}', 'ProdukController@update')->name('update-stock');
     Route::get('/order/{OrderId}', [OrderController::class, 'show'])->name('make-order');
-    Route::post('/make-order', [OrderController::class, 'store'])->name('store-order');
+    Route::post('/make-order', [OrderController::class, 'create'])->name('store-order');
     Route::post('/add-to-cart/{OrderId}', [CartController::class, 'store'])->name('add-to-cart');
     Route::post('/update-cart/{OrderId}', [CartController::class, 'update'])->name('update-cart');
     Route::delete('/delete-cart/{OrderId}', [CartController::class, 'destroy'])->name('delete-cart');
