@@ -40,8 +40,6 @@
         "vue-template-compiler": "^2.6.11"
     },
     "devDependencies": {
-        "browser-sync": "^3.0.2",
-        "browser-sync-webpack-plugin": "^2.0.1",
         "cross-env": "^7.0",
         "laravel-mix": "^6.0.49",
         "lodash": "^4.17.13",
